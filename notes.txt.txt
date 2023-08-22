@@ -1,2 +1,121 @@
 this is file
 satya
+
+FAVICONS---------------------------
+
+<html>
+<head>
+  <title>My Page Title</title>
+  <link rel="icon" type="image/x-icon" href="web.png">
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+==================================PROFILE CARD============================
+html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>SATYA DEV- PASSIONATE IN FULL STACK DEVELOPMENT</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <style>
+        body{
+            min-height: 100vh;
+            margin: 0px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            
+        }
+        body::before{
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+            background: url("https://images.unsplash.com/photo-1606402340339-b8abb706bb3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+            background-size: cover;
+        
+        }
+        .profile-card{
+            padding: 20px 40px;
+            border-radius: 20px;
+            backdrop-filter: saturate(200%) blur(15px);
+            -webkit-backdrop-filter: saturate(200%) blur(15px);
+            background: rgba(155,155, 155, .3);
+            border: 2px solid rgba(204,204, 204, .3);
+            box-shadow: 5px 10px 18px rgba(0, 0, 0, .3);
+            transform-style: preserve-3d ;
+            transform: perspective(100px);
+
+        }
+        .satya-img{
+            transform: translateZ(30px);
+            background-size: auto;
+    
+        }
+        .satya-img::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%) scale(1.2);
+            height: 100%;
+            background: rgb(28 28 28/ 30%);
+            border-radius: 100%;
+            aspect-ratio: 1 / 1;
+            z-index: -1;
+
+
+        }
+        .satya-img img{
+            border-radius: 100%;
+            width: 120px;
+            display: block;
+            margin: auto;
+            
+        }
+        .profile-content{
+            text-align: center;
+        }
+        .profile-content h3,
+        .profile-content h5{
+            color: #0d0d0d;
+            font-family: 'inter' Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin: 0;
+        }
+        .profile-content h3{
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .profile-content h5{
+            font-weight: 600;
+        }
+
+    </style>
+    <div class="profile-card" data-tilt data-tilt-max="3"data-tilt-speed="1000" data-tilt-glare data-tilt-glare="0.1"data-tilt-full-page-listening>
+    <div class="satya-img">
+        <img src="satya-img.jpg">
+    </div>
+<div class="profile-content">
+    <h3>SATYA FULL STACK DEV</h3>
+    <h5>full stack dev</h5>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+</body>
+</html>
+===============================================================================
